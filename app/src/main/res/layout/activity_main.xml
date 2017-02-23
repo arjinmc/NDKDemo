@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arjinmc.ndkdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_sort"
+                android:text="Java call C method"/>
+
+            <Button
+                android:id="@+id/btn_c_print"
+                style="@style/button"
+                android:text="call c print"
+                />
+
+            <Button
+                android:id="@+id/btn_c_add"
+                style="@style/button"
+                android:text="call c add"
+                />
+
+            <Button
+                android:id="@+id/btn_c_intArray"
+                style="@style/button"
+                android:text="call c int array"
+                />
+
+            <Button
+                android:id="@+id/btn_c_string"
+                style="@style/button"
+                android:text="call c String"
+                />
+
+            <Button
+                android:id="@+id/btn_c_custom"
+                style="@style/button"
+                android:text="call c custom object"
+                />
+
+            <Button
+                android:id="@+id/btn_c_custom_object_array"
+                style="@style/button"
+                android:text="call c custom object array"
+                />
+
+            <TextView
+                style="@style/text_sort"
+                android:text="C call Java method"/>
+            <Button
+                android:id="@+id/btn_j_print"
+                style="@style/button"
+                android:text="call java print"
+                />
+            <Button
+                android:id="@+id/btn_j_toast"
+                style="@style/button"
+                android:text="call android toast"
+                />
+            <Button
+                android:id="@+id/btn_j_int"
+                style="@style/button"
+                android:text="call java int"
+                />
+            <Button
+                android:id="@+id/btn_j_add"
+                style="@style/button"
+                android:text="call java add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
